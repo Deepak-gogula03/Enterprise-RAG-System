@@ -1,6 +1,6 @@
 # 🚀 Enterprise Traditional RAG System using LangChain, ChromaDB, Sentence Transformers & Groq Llama 3.3
 
-> A complete end-to-end Retrieval-Augmented Generation (RAG) system designed from scratch using LangChain, ChromaDB, Sentence Transformers, and Groq Llama 3.3. This project demonstrates the implementation of modern AI-powered document intelligence pipelines, semantic retrieval systems, vector databases, and advanced retrieval workflows with explainability, confidence scoring, streaming responses, and context-aware answer generation.
+A complete end-to-end Retrieval-Augmented Generation (RAG) system designed from scratch using LangChain, ChromaDB, Sentence Transformers, and Groq Llama 3.3. This project demonstrates the implementation of modern AI-powered document intelligence pipelines, semantic retrieval systems, vector databases, and advanced retrieval workflows with explainability, confidence scoring, streaming responses, and context-aware answer generation.
 
 ---
 
