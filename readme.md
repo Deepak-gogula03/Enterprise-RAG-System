@@ -150,7 +150,7 @@ These capabilities closely resemble the architecture used in modern enterprise-g
 
 # 🏗️ System Architecture
 
-![Architecture](images/architecture.png)
+<img width="1536" height="1024" alt="ChatGPT Image Jun 2, 2026, 09_10_41 PM" src="https://github.com/user-attachments/assets/53d775ee-3e9a-4c3a-9411-cf451f6996ca" />
 
 The architecture follows a complete Retrieval-Augmented Generation workflow consisting of document ingestion, embedding generation, vector storage, semantic retrieval, context construction, answer generation, and response optimization.
 
