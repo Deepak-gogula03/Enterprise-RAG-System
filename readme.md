@@ -88,8 +88,6 @@ Responsible for:
 - Semantic Encoding
 - Vector Creation
 
----
-
 ### 🗄️ VectorStore
 
 Responsible for:
@@ -98,8 +96,6 @@ Responsible for:
 - Persistent Storage
 - Similarity Search
 - Metadata Management
-
----
 
 ### 🔍 RAGRetriever
 
