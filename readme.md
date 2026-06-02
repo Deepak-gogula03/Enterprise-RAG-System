@@ -61,6 +61,7 @@ This project demonstrates how Retrieval-Augmented Generation can transform stati
 📊 Financial Document Intelligence
 
 ---
+
 # 📚 Knowledge Base Information
 
 This project is designed to work with custom document collections and demonstrates how enterprise knowledge can be transformed into searchable AI systems.
@@ -73,6 +74,7 @@ Supported Sources:
 - Knowledge Repositories
 
 The ingestion pipeline automatically extracts text, metadata, and contextual information before preparing the documents for vectorization and retrieval.
+
 ---
 
 # ⚙️ Custom Components Developed
@@ -110,6 +112,7 @@ Responsible for:
 - Context Ranking
 
 ---
+
 # 🌟 Why This Project Stands Out
 
 Unlike most introductory RAG projects, this implementation goes beyond simple retrieval and answer generation.
@@ -128,6 +131,7 @@ The project demonstrates:
 - Modular Retrieval Architecture
 
 These capabilities closely resemble the architecture used in modern enterprise-grade AI knowledge systems.
+
 ---
 
 # 📊 Project Metrics
@@ -439,42 +443,6 @@ These metrics help evaluate both retrieval quality and overall system performanc
 
 ---
 
-# 📸 Project Screenshots
-
-### 🏗️ Architecture Diagram
-
-![Architecture](images/architecture.png)
-
-### 📥 Data Ingestion Pipeline
-
-Add Screenshot Here
-
-### 🧠 Embedding Pipeline
-
-Add Screenshot Here
-
-### 🗄️ ChromaDB Vector Store
-
-Add Screenshot Here
-
-### 🔍 Retrieval Pipeline
-
-Add Screenshot Here
-
-### 💬 Traditional RAG Output
-
-Add Screenshot Here
-
-### 🚀 Enhanced RAG Output
-
-Add Screenshot Here
-
-### ⚡ Advanced RAG Output
-
-Add Screenshot Here
-
----
-
 # 📥 Installation
 
 Clone the repository:
@@ -567,10 +535,3 @@ Enterprise-RAG-System/
 * Customer Support Automation
 * Financial Knowledge Systems
 
----
-
-# 👨‍💻 Author
-
-**Deepak Gogula**
-
-Generative AI | LangChain | Retrieval-Augmented Generation | Vector Databases | LLM Applications | AI Engineering
