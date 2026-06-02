@@ -1,323 +1,339 @@
-# 🚀 Enterprise Traditional RAG System using LangChain, ChromaDB, Sentence Transformers & Groq Llama 3.3
+# 🚀 Enterprise RAG System using LangChain, ChromaDB, Sentence Transformers & Groq Llama 3.3
 
-A complete end-to-end Retrieval-Augmented Generation (RAG) system designed from scratch using LangChain, ChromaDB, Sentence Transformers, and Groq Llama 3.3. This project demonstrates the implementation of modern AI-powered document intelligence pipelines, semantic retrieval systems, vector databases, and advanced retrieval workflows with explainability, confidence scoring, streaming responses, and context-aware answer generation.
+A complete end-to-end Retrieval-Augmented Generation (RAG) system built using LangChain, ChromaDB, Sentence Transformers, and Groq Llama 3.3. This project demonstrates the implementation of modern AI-powered document intelligence pipelines capable of processing documents, generating semantic embeddings, performing vector-based retrieval, and producing context-aware responses through advanced retrieval workflows.
+
+Unlike basic RAG implementations, this project showcases the evolution of Retrieval-Augmented Generation systems from Traditional RAG to Enhanced RAG and Advanced RAG while incorporating explainability, confidence scoring, streaming responses, query history tracking, and context summarization.
 
 ---
 
 # 📖 Overview
 
-Retrieval-Augmented Generation (RAG) has emerged as one of the most important architectural patterns in modern Generative AI systems.
+Retrieval-Augmented Generation (RAG) is one of the most important architectural patterns in modern Generative AI applications.
 
-While Large Language Models possess strong reasoning capabilities, they cannot directly access proprietary documents, organizational knowledge bases, research papers, or real-time information.
+Large Language Models possess powerful reasoning capabilities but cannot directly access proprietary documents, organizational knowledge bases, PDFs, research papers, or dynamically changing information.
 
-This project bridges that gap by building a complete Traditional RAG architecture capable of:
+This project solves that challenge by combining semantic search, vector databases, embeddings, and large language models to build an intelligent knowledge retrieval system capable of providing grounded and explainable responses.
 
-* Processing custom documents
-* Generating semantic embeddings
-* Storing vectors in a vector database
-* Performing semantic retrieval
-* Constructing retrieval-aware prompts
-* Generating grounded responses using LLMs
-* Providing explainable and trustworthy outputs
-
-The project was developed as a modular, production-oriented RAG system showcasing multiple stages of retrieval engineering and AI application development.
+The system processes custom documents, converts them into vector embeddings, stores them within ChromaDB, retrieves relevant context through semantic similarity search, and generates accurate answers using Groq's Llama 3.3 70B model.
 
 ---
 
-# 🎯 Project Objectives
+# 🎯 Project Objective
 
-The primary objective of this project is to design and implement a complete Retrieval-Augmented Generation workflow capable of transforming static document collections into intelligent knowledge retrieval systems.
+The primary objective of this project is to design and implement a complete Retrieval-Augmented Generation workflow capable of transforming static document repositories into intelligent AI-powered knowledge systems.
 
-Key goals include:
+The project focuses on:
 
-* Building a modular document intelligence pipeline
-* Creating reusable ingestion and retrieval workflows
+* Building reusable document ingestion pipelines
 * Implementing semantic search using vector embeddings
+* Designing modular retrieval workflows
 * Integrating Large Language Models with retrieval systems
-* Reducing hallucinations through retrieval grounding
-* Improving explainability through citations and confidence scores
-* Demonstrating enterprise-grade RAG architecture design
+* Improving answer quality through context grounding
+* Reducing hallucinations using retrieval augmentation
+* Providing explainable and trustworthy AI responses
 
 ---
 
-# 🌟 Key Highlights
+# 💼 Business Impact
 
-### ✅ Complete End-to-End RAG Architecture
+Organizations generate massive volumes of unstructured information including PDFs, reports, documentation, research papers, manuals, and internal knowledge repositories.
 
-Designed and implemented every stage of a Retrieval-Augmented Generation system from ingestion to answer generation.
+Traditional keyword-based search systems often fail to retrieve relevant information because they depend on exact keyword matching.
 
-### ✅ Multiple Data Loading Strategies
+This project demonstrates how Retrieval-Augmented Generation can transform static document repositories into intelligent knowledge systems capable of delivering context-aware responses with high retrieval accuracy.
 
-Implemented:
+### Potential Real-World Applications
 
-* TextLoader
-* DirectoryLoader
-* PyPDFLoader
-* PyMuPDFLoader
+🏢 Enterprise Knowledge Bases
 
-for processing different document formats.
+📚 Internal Documentation Search
 
-### ✅ Custom Embedding Pipeline
+⚖️ Legal Document Analysis
 
-Built a reusable embedding management layer using Sentence Transformers.
+🏥 Healthcare Knowledge Retrieval
 
-### ✅ Custom Vector Database Layer
+📑 Research Paper Assistants
 
-Implemented a dedicated VectorStore class integrated with ChromaDB.
+🎓 Educational Knowledge Platforms
 
-### ✅ Semantic Retrieval Engine
+💬 Customer Support Systems
 
-Built a custom retriever capable of:
-
-* Similarity Search
-* Top-K Retrieval
-* Score Threshold Filtering
-* Metadata Retrieval
-
-### ✅ Multiple RAG Variants
-
-Implemented:
-
-* Traditional RAG
-* Enhanced RAG
-* Advanced RAG
-
-### ✅ Explainable AI Features
-
-Implemented:
-
-* Source Citations
-* Confidence Scores
-* Context Inspection
-
-### ✅ Advanced Retrieval Features
-
-Implemented:
-
-* Query History Tracking
-* Streaming Responses
-* Response Summarization
-* Execution Time Monitoring
+📊 Financial Document Intelligence
 
 ---
-# 🚀 Why This Project Matters
+# 📚 Knowledge Base Information
 
-Modern enterprises generate enormous volumes of unstructured data in the form of PDFs, reports, documentation, research papers, contracts, manuals, and knowledge repositories.
+This project is designed to work with custom document collections and demonstrates how enterprise knowledge can be transformed into searchable AI systems.
 
-Traditional search systems rely on keyword matching and often fail to retrieve semantically relevant information, resulting in poor search quality and reduced productivity.
+Supported Sources:
 
-This project demonstrates how Retrieval-Augmented Generation (RAG) can transform static document repositories into intelligent AI-powered knowledge systems by combining:
+- PDF Documents
+- Text Files
+- Multi-Document Directories
+- Knowledge Repositories
 
-* Semantic Search
-* Vector Databases
-* Large Language Models
-* Context Engineering
-* Retrieval Optimization
+The ingestion pipeline automatically extracts text, metadata, and contextual information before preparing the documents for vectorization and retrieval.
+---
 
-The resulting system can understand user intent, retrieve contextually relevant information, and generate grounded responses with explainable citations and confidence scores.
+# ⚙️ Custom Components Developed
 
+### 🧠 EmbeddingManager
+
+Responsible for:
+
+- Embedding Generation
+- Batch Processing
+- Semantic Encoding
+- Vector Creation
+
+---
+
+### 🗄️ VectorStore
+
+Responsible for:
+
+- ChromaDB Integration
+- Persistent Storage
+- Similarity Search
+- Metadata Management
+
+---
+
+### 🔍 RAGRetriever
+
+Responsible for:
+
+- Query Processing
+- Similarity Retrieval
+- Top-K Search
+- Score Filtering
+- Context Ranking
+
+---
+# 🌟 Why This Project Stands Out
+
+Unlike most introductory RAG projects, this implementation goes beyond simple retrieval and answer generation.
+
+The project demonstrates:
+
+- Traditional RAG
+- Enhanced RAG
+- Advanced RAG
+- Confidence Scoring
+- Source Attribution
+- Streaming Responses
+- Query History Tracking
+- Context Summarization
+- Performance Monitoring
+- Modular Retrieval Architecture
+
+These capabilities closely resemble the architecture used in modern enterprise-grade AI knowledge systems.
 ---
 
 # 📊 Project Metrics
 
-### Retrieval Architecture
-
-* Traditional RAG Pipeline
-* Enhanced RAG Pipeline
-* Advanced RAG Pipeline
-
-### Data Processing Capabilities
-
-* PDF Document Processing
-* Text File Processing
-* Multi-Document Loading
-* Metadata Extraction
-
-### Embedding Infrastructure
-
-**Embedding Model**
-
-all-MiniLM-L6-v2
-
-**Embedding Framework**
-
-Sentence Transformers
-
-### Vector Database
-
-ChromaDB
-
-### Large Language Model
-
-llama-3.3-70b-versatile
-
-### Retrieval Features
-
-* Similarity Search
-* Top-K Retrieval
-* Score Threshold Filtering
-* Context Ranking
-* Metadata Retrieval
-
-### Explainability Features
-
-* Source Citations
-* Confidence Scoring
-* Context Inspection
-
-### Advanced Features
-
-* Query History Tracking
-* Streaming Responses
-* Context Summarization
-* Execution Time Monitoring
+| Metric                   | Value                      |
+| ------------------------ | -------------------------- |
+| AI Framework             | LangChain                  |
+| Embedding Model          | all-MiniLM-L6-v2           |
+| Embedding Framework      | Sentence Transformers      |
+| Vector Database          | ChromaDB                   |
+| LLM Provider             | Groq                       |
+| Language Model           | llama-3.3-70b-versatile    |
+| Retrieval Strategy       | Semantic Similarity Search |
+| RAG Variants Implemented | 3                          |
+| Custom Classes Developed | 3                          |
+| Package Manager          | UV                         |
+| Development Environment  | Jupyter Notebook           |
 
 ---
 
-# 🌟 What Makes This Project Different?
+# 🏗️ System Architecture
 
-Unlike many introductory RAG demonstrations that stop after document retrieval and answer generation, this project focuses on retrieval engineering and production-oriented design principles.
+![Architecture](images/architecture.png)
 
-### Custom Components Implemented
-
-✅ Custom Document Processing Workflow
-
-✅ Custom EmbeddingManager Class
-
-✅ Custom VectorStore Class
-
-✅ Custom RAGRetriever Class
-
-### Explainable AI Layer
-
-✅ Confidence Scoring
-
-✅ Source Attribution
-
-✅ Retrieval Analysis
-
-✅ Context Inspection
-
-### Advanced Retrieval Layer
-
-✅ Query History Management
-
-✅ Streaming Responses
-
-✅ Context Summarization
-
-✅ Execution Time Tracking
-
-### Production Engineering
-
-✅ Modular Architecture
-
-✅ UV Dependency Management
-
-✅ Persistent Vector Storage
-
-✅ Reusable Pipelines
-
-This project demonstrates practical AI Engineering concepts that extend beyond a basic LangChain notebook implementation.
+The architecture follows a complete Retrieval-Augmented Generation workflow consisting of document ingestion, embedding generation, vector storage, semantic retrieval, context construction, answer generation, and response optimization.
 
 ---
 
-# 🧩 Engineering Challenges Solved
+# ✨ Key Features
 
-### Challenge 1 — Handling Multiple Document Formats
+## 📥 Data Ingestion Pipeline
 
-Organizations store information across multiple file formats, requiring flexible ingestion mechanisms.
+* Multi-format document loading
+* PDF processing and parsing
+* Metadata extraction
+* Text preprocessing
+* Directory-level document ingestion
 
-**Solution**
-
-Implemented multiple loaders:
+Supported Loaders:
 
 * TextLoader
 * DirectoryLoader
 * PyPDFLoader
 * PyMuPDFLoader
 
-This enables seamless processing of structured and unstructured document collections.
+---
+
+## 🧠 Embedding Pipeline
+
+* Semantic embedding generation
+* Sentence Transformer integration
+* Batch processing support
+* Vector representation generation
+
+Embedding Model:
+
+```text
+all-MiniLM-L6-v2
+```
+
+Custom Component:
+
+```text
+EmbeddingManager
+```
 
 ---
 
-### Challenge 2 — Semantic Information Retrieval
+## 🗄️ ChromaDB Vector Storage
 
-Traditional keyword search often fails to capture the true meaning of user queries.
+* Persistent vector storage
+* Metadata support
+* Similarity indexing
+* Efficient retrieval architecture
 
-**Solution**
+Custom Component:
 
-Implemented semantic embeddings using Sentence Transformers and stored them in ChromaDB to enable meaning-based retrieval.
+```text
+VectorStore
+```
 
----
+Vector Database:
 
-### Challenge 3 — Reducing Hallucinations
-
-LLMs may generate inaccurate information when they lack relevant context.
-
-**Solution**
-
-Grounded responses using retrieved document context before passing information to the language model.
-
----
-
-### Challenge 4 — Explainability & Trust
-
-Users need to understand why a particular answer was generated.
-
-**Solution**
-
-Implemented:
-
-* Source Citations
-* Confidence Scores
-* Context Inspection
-
-to improve transparency and trustworthiness.
+```text
+ChromaDB
+```
 
 ---
 
-### Challenge 5 — Response Quality Optimization
+## 🔍 Semantic Retrieval Pipeline
 
-Large retrieved contexts can impact generation quality.
+Custom retrieval system capable of:
 
-**Solution**
+* Similarity Search
+* Top-K Retrieval
+* Score Threshold Filtering
+* Metadata Retrieval
+* Context Ranking
 
-Implemented context summarization and retrieval optimization techniques to improve final answer quality.
+Custom Component:
+
+```text
+RAGRetriever
+```
 
 ---
 
-# 🧬 Evolution of the RAG System
+## 💬 Context-Aware Answer Generation
 
-The project was intentionally designed to demonstrate the progression of Retrieval-Augmented Generation systems from basic implementations to production-oriented architectures.
+* Retrieval grounded generation
+* Context construction
+* Prompt augmentation
+* LLM-powered answer generation
+
+Model:
+
+```text
+llama-3.3-70b-versatile
+```
 
 ---
 
-## 🔹 Phase 1 — Traditional RAG
+# ⚙️ End-to-End Workflow
 
-### Features
+### Step 1: Document Ingestion
+
+Documents are loaded using LangChain document loaders and converted into a standardized format.
+
+### Step 2: Text Processing
+
+Raw documents are cleaned, processed, and prepared for embedding generation.
+
+### Step 3: Embedding Generation
+
+Documents are transformed into dense vector representations using Sentence Transformers.
+
+### Step 4: Vector Storage
+
+Generated embeddings are stored in ChromaDB for efficient similarity search.
+
+### Step 5: Query Processing
+
+User queries are converted into vector embeddings.
+
+### Step 6: Semantic Retrieval
+
+Relevant document chunks are retrieved using similarity search.
+
+### Step 7: Context Construction
+
+Retrieved documents are combined into contextual prompts.
+
+### Step 8: Response Generation
+
+Groq Llama 3.3 generates grounded responses using the retrieved context.
+
+### Step 9: Advanced RAG Processing
+
+Confidence scoring, source attribution, history tracking, and response optimization are applied.
+
+---
+
+# 🧬 RAG Pipeline Evolution
+
+This project demonstrates the progression of Retrieval-Augmented Generation architectures.
+
+---
+
+## 🔹 Traditional RAG
+
+Basic retrieval workflow:
+
+```text
+Query
+   │
+   ▼
+Retriever
+   │
+   ▼
+Context
+   │
+   ▼
+LLM
+   │
+   ▼
+Answer
+```
+
+Features:
 
 * Semantic Retrieval
 * Context Construction
-* Prompt Engineering
 * Answer Generation
-
-### Workflow
-
-User Query → Retriever → Context → LLM → Answer
 
 ---
 
-## 🔹 Phase 2 — Enhanced RAG
+## 🔹 Enhanced RAG
 
-### Additional Features
+Additional Features:
 
-* Confidence Score Calculation
-* Source Attribution
-* Retrieval Analysis
+* Source Citations
+* Confidence Scoring
 * Context Inspection
+* Retrieval Evaluation
 
-### Benefits
+Benefits:
 
 * Improved Transparency
 * Better Explainability
@@ -325,411 +341,20 @@ User Query → Retriever → Context → LLM → Answer
 
 ---
 
-## 🔹 Phase 3 — Advanced RAG
+## 🔹 Advanced RAG
 
-### Additional Features
+Additional Features:
 
 * Query History Tracking
 * Streaming Responses
 * Context Summarization
-* Execution Monitoring
+* Execution Time Monitoring
 * Retrieval Analytics
 
-### Benefits
+Benefits:
 
 * Better User Experience
 * Improved Observability
-* Production Readiness
-
----
-
-# 🚀 Production-Oriented Features
-
-The architecture was designed with real-world deployment considerations in mind.
-
-### Implemented Features
-
-✅ Modular Pipeline Design
-
-✅ Reusable Components
-
-✅ UV Environment Management
-
-✅ Persistent ChromaDB Storage
-
-✅ Configurable Retrieval Parameters
-
-✅ Source Attribution
-
-✅ Streaming Generation
-
-✅ Execution Monitoring
-
-✅ Context Summarization
-
-✅ Retrieval Analytics
-
----
-
-# 📸 Project Demonstration
-
-Add screenshots of the following outputs:
-
-### Architecture Diagram
-
-System-level architecture showing the complete RAG workflow.
-
-### Data Ingestion Pipeline
-
-Document loading, preprocessing, and ingestion process.
-
-### Embedding Pipeline
-
-Embedding generation and vector creation workflow.
-
-### ChromaDB Storage
-
-Vector database storage and persistence.
-
-### Retrieval Pipeline
-
-Similarity search and document retrieval process.
-
-### Traditional RAG Output
-
-Basic retrieval and answer generation.
-
-### Enhanced RAG Output
-
-Source citations and confidence scores.
-
-### Advanced RAG Output
-
-Streaming responses, query history, and context summarization.
-
----
-
-# 🎯 Recruiter-Focused Skills Demonstrated
-
-### Generative AI
-
-* Retrieval-Augmented Generation
-* Prompt Engineering
-* Context Engineering
-* Grounded Generation
-
-### LangChain
-
-* Document Loaders
-* Retrieval Pipelines
-* Vector Stores
-* Prompt Templates
-* Chain Construction
-
-### Embeddings & Semantic Search
-
-* Sentence Transformers
-* Vector Representations
-* Similarity Search
-
-### Vector Databases
-
-* ChromaDB
-* Persistent Storage
-* Metadata Filtering
-
-### Large Language Models
-
-* Groq Integration
-* Llama 3.3 70B
-* Streaming Generation
-
-### AI Engineering
-
-* Modular System Design
-* Retrieval Optimization
-* Explainable AI
-* Production-Oriented Architecture
-
-### Software Engineering
-
-* UV Package Management
-* Environment Isolation
-* Pipeline Development
-* Reusable Components
-
-# 🏗️ Solution Architecture
-
-> Add your Architecture Diagram Here
-
-```markdown
-![Architecture](images/architecture.png)
-```
-
----
-
-# 🔄 End-to-End Workflow
-
-```text
-Document Sources
-        │
-        ▼
-Data Ingestion Pipeline
-        │
-        ▼
-Document Processing
-        │
-        ▼
-Text Chunking
-        │
-        ▼
-Embedding Generation
-        │
-        ▼
-ChromaDB Vector Store
-        │
-        ▼
-Semantic Retrieval
-        │
-        ▼
-Context Construction
-        │
-        ▼
-Prompt Engineering
-        │
-        ▼
-Groq Llama 3.3
-        │
-        ▼
-Answer Generation
-        │
-        ▼
-Confidence Score
-        │
-        ▼
-Source Citations
-        │
-        ▼
-Final Response
-```
-
----
-
-# 📊 System Capabilities
-
-| Capability                | Status |
-| ------------------------- | ------ |
-| Document Objects          | ✅      |
-| Text File Loading         | ✅      |
-| PDF Processing            | ✅      |
-| Directory-Based Loading   | ✅      |
-| Metadata Handling         | ✅      |
-| Embedding Generation      | ✅      |
-| Sentence Transformers     | ✅      |
-| ChromaDB Storage          | ✅      |
-| Persistent Vector Storage | ✅      |
-| Semantic Search           | ✅      |
-| Similarity Retrieval      | ✅      |
-| Top-K Retrieval           | ✅      |
-| Score Threshold Filtering | ✅      |
-| Traditional RAG           | ✅      |
-| Enhanced RAG              | ✅      |
-| Advanced RAG              | ✅      |
-| Source Citations          | ✅      |
-| Confidence Scoring        | ✅      |
-| Query History             | ✅      |
-| Streaming Responses       | ✅      |
-| Context Summarization     | ✅      |
-| Execution Time Tracking   | ✅      |
-| Groq Integration          | ✅      |
-| UV Package Management     | ✅      |
-
----
-
-# 📥 Data Ingestion Pipeline
-
-The Data Ingestion Pipeline is responsible for collecting, processing, and standardizing documents before embedding generation.
-
-### Components Used
-
-* Document Objects
-* TextLoader
-* DirectoryLoader
-* PyPDFLoader
-* PyMuPDFLoader
-
-### Responsibilities
-
-* Document Loading
-* Text Extraction
-* PDF Parsing
-* Metadata Collection
-* Data Standardization
-* Multi-Document Processing
-
-### Output
-
-```text
-Raw Documents
-      │
-      ▼
-Processed Documents
-```
-
----
-
-# 🧠 Embedding Pipeline
-
-The Embedding Pipeline transforms textual content into dense vector representations suitable for semantic search.
-
-### Embedding Model
-
-```text
-all-MiniLM-L6-v2
-```
-
-### Custom Class
-
-```text
-EmbeddingManager
-```
-
-### Responsibilities
-
-* Embedding Generation
-* Semantic Encoding
-* Batch Processing
-* Vector Representation
-
-### Benefits
-
-* Meaning-Based Search
-* Improved Retrieval Quality
-* Semantic Understanding
-
----
-
-# 🗄️ Vector Storage Pipeline
-
-The Vector Storage Pipeline stores embeddings within ChromaDB for efficient retrieval.
-
-### Custom Class
-
-```text
-VectorStore
-```
-
-### Vector Database
-
-```text
-ChromaDB
-```
-
-### Features
-
-* Persistent Storage
-* Metadata Support
-* Similarity Indexing
-* Fast Retrieval
-
----
-
-# 🔍 Query Retrieval Pipeline
-
-The Retrieval Pipeline is responsible for finding the most relevant document chunks for a user query.
-
-### Custom Class
-
-```text
-RAGRetriever
-```
-
-### Retrieval Features
-
-* Query Embedding Generation
-* Similarity Search
-* Top-K Retrieval
-* Metadata Retrieval
-* Score Threshold Filtering
-
-### Benefits
-
-* Context Relevance
-* Better Retrieval Accuracy
-* Improved Answer Quality
-
----
-
-# 🧬 RAG Pipeline Evolution
-
-This project demonstrates the progressive evolution of Retrieval-Augmented Generation systems.
-
----
-
-## 🔹 Traditional RAG Pipeline
-
-### Workflow
-
-```text
-User Query
-      │
-      ▼
-Retriever
-      │
-      ▼
-Context Retrieval
-      │
-      ▼
-Groq LLM
-      │
-      ▼
-Answer
-```
-
-### Features
-
-* Semantic Search
-* Context Construction
-* Prompt Generation
-* Answer Generation
-
----
-
-## 🔹 Enhanced RAG Pipeline
-
-Introduced explainability and retrieval evaluation.
-
-### Additional Features
-
-* Source Citations
-* Confidence Scores
-* Retrieval Analysis
-* Context Inspection
-
-### Benefits
-
-* Reduced Hallucinations
-* Better Transparency
-* Explainable Responses
-
----
-
-## 🔹 Advanced RAG Pipeline
-
-Introduced enterprise-grade capabilities.
-
-### Additional Features
-
-* Query History
-* Streaming Responses
-* Context Summarization
-* Execution Time Tracking
-* Retrieval Analytics
-
-### Benefits
-
-* Better User Experience
-* Improved Monitoring
 * Production Readiness
 
 ---
@@ -752,7 +377,7 @@ llama-3.3-70b-versatile
 * Low Latency
 * Large Context Window
 * Strong Reasoning Performance
-* Production-Ready Deployment
+* Production-Grade Deployment
 
 ---
 
@@ -772,159 +397,175 @@ Measures:
 
 Provides:
 
-* Source File
-* Page Information
-* Similarity Scores
-* Context Preview
+* Source Documents
+* Supporting Context
+* Retrieval Evidence
 
 ### Context Inspection
 
-Allows inspection of retrieved context before answer generation.
+Allows retrieved context to be analyzed before answer generation.
 
 ---
 
 # 📈 Performance Monitoring
 
-The Advanced RAG Pipeline includes operational metrics such as:
+The Advanced RAG Pipeline includes operational monitoring features such as:
 
 * Retrieval Time
-* LLM Generation Time
+* Generation Time
 * End-to-End Latency
 * Retrieved Document Count
 * Similarity Scores
 * Confidence Scores
 
-These metrics help evaluate both retrieval quality and system performance.
+These metrics help evaluate both retrieval quality and overall system performance.
 
 ---
 
 # 🛠️ Technology Stack
 
-| Category             | Technology              |
-| -------------------- | ----------------------- |
-| Programming Language | Python                  |
-| AI Framework         | LangChain               |
-| LLM Provider         | Groq                    |
-| Model                | Llama 3.3 70B Versatile |
-| Embeddings           | Sentence Transformers   |
-| Embedding Model      | all-MiniLM-L6-v2        |
-| Vector Database      | ChromaDB                |
-| Document Processing  | PyMuPDF                 |
-| Package Manager      | UV                      |
-| Notebook Environment | Jupyter Notebook        |
+| Component               | Technology              |
+| ----------------------- | ----------------------- |
+| Programming Language    | Python                  |
+| AI Framework            | LangChain               |
+| LLM Provider            | Groq                    |
+| Model                   | Llama 3.3 70B Versatile |
+| Embeddings              | Sentence Transformers   |
+| Embedding Model         | all-MiniLM-L6-v2        |
+| Vector Database         | ChromaDB                |
+| Document Processing     | PyMuPDF                 |
+| Package Manager         | UV                      |
+| Development Environment | Jupyter Notebook        |
 
 ---
 
-# 🎯 Skills Demonstrated
+# 📸 Project Screenshots
 
-### Generative AI
+### 🏗️ Architecture Diagram
 
-* Retrieval-Augmented Generation
-* Context Engineering
-* Prompt Engineering
-* LLM Orchestration
+![Architecture](images/architecture.png)
 
-### LangChain
+### 📥 Data Ingestion Pipeline
 
-* Document Loaders
-* Custom Retrieval Pipelines
-* Vector Store Integration
-* RAG Workflows
+Add Screenshot Here
 
-### Semantic Search
+### 🧠 Embedding Pipeline
 
-* Embedding Generation
-* Similarity Search
-* Context Ranking
+Add Screenshot Here
 
-### Vector Databases
+### 🗄️ ChromaDB Vector Store
 
-* ChromaDB
-* Persistent Storage
-* Metadata Filtering
+Add Screenshot Here
 
-### LLM Integration
+### 🔍 Retrieval Pipeline
 
-* Groq API
-* Llama 3.3 70B
-* Streaming Responses
+Add Screenshot Here
 
-### AI Engineering
+### 💬 Traditional RAG Output
 
-* Retrieval System Design
-* Modular Architecture
-* Explainable AI
-* Enterprise RAG Systems
+Add Screenshot Here
+
+### 🚀 Enhanced RAG Output
+
+Add Screenshot Here
+
+### ⚡ Advanced RAG Output
+
+Add Screenshot Here
+
+---
+
+# 📥 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/enterprise-rag-system.git
+```
+
+Move into the project directory:
+
+```bash
+cd enterprise-rag-system
+```
+
+Create UV Environment:
+
+```bash
+uv venv
+```
+
+Install Dependencies:
+
+```bash
+uv sync
+```
+
+---
+
+# 🔐 Environment Configuration
+
+Create a `.env` file:
+
+```env
+GROQ_API_KEY=YOUR_GROQ_API_KEY
+```
 
 ---
 
 # 📁 Project Structure
 
 ```text
-TraditionalRAG/
+Enterprise-RAG-System/
+│
+├── notebooks/
+│   └── document.ipynb
 │
 ├── data/
 │   ├── pdf/
 │   ├── text_files/
-│   └── vector_store/
+│   └── chroma_db/
 │
-├── notebook/
-│   └── document.ipynb
+├── screenshots/
+│   ├── architecture.png
+│   ├── ingestion_pipeline.png
+│   ├── retrieval_pipeline.png
+│   ├── enhanced_rag_output.png
+│   └── advanced_rag_output.png
 │
-├── .env
-├── main.py
+├── requirements.txt
 ├── pyproject.toml
 ├── uv.lock
-├── requirements.txt
-└── README.md
+├── README.md
+└── .env.example
 ```
 
 ---
 
-# 🚀 Installation & Setup
+# 🌟 Project Highlights
 
-```bash
-git clone https://github.com/yourusername/TraditionalRAG.git
-
-cd TraditionalRAG
-
-uv venv
-
-uv sync
-```
-
-Create `.env`
-
-```env
-GROQ_API_KEY=YOUR_GROQ_API_KEY
-```
-
-Run:
-
-```bash
-jupyter notebook
-```
-
-Open:
-
-```text
-notebook/document.ipynb
-```
-
-Execute all cells sequentially.
+* Built a complete end-to-end Retrieval-Augmented Generation architecture
+* Implemented custom EmbeddingManager, VectorStore, and RAGRetriever components
+* Integrated ChromaDB for persistent vector storage
+* Implemented semantic similarity search using Sentence Transformers
+* Developed Traditional, Enhanced, and Advanced RAG workflows
+* Added confidence scoring and source attribution
+* Implemented streaming responses and query history tracking
+* Integrated Groq Llama 3.3 70B for high-speed inference
+* Demonstrated production-oriented retrieval engineering concepts
 
 ---
 
 # 💼 Real-World Applications
 
-* Enterprise Knowledge Bases
-* Research Assistants
-* Legal Document Search
-* Financial Document Analysis
-* Customer Support Systems
-* Technical Documentation Search
-* Internal Organizational Search Engines
-* AI-Powered Knowledge Retrieval Platforms
+* Enterprise Search Systems
+* AI Knowledge Assistants
+* Internal Documentation Search
+* Legal Document Intelligence
+* Research Paper Retrieval
+* Educational Assistants
+* Customer Support Automation
+* Financial Knowledge Systems
 
 ---
 
